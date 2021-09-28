@@ -1,0 +1,307 @@
+Q 1 Write a Java program to print 'Hello' on screen and then print your name on a separate line.
+
+package conceptOfPrograming;
+
+public class hello_world {
+	public static void main (String args[]) {
+		char code='m';
+		System.out.println("Hello__World_java"+code);
+	}
+}
+
+
+ 
+Q 2  Wap to swap two numbers
+
+class swapTwoNumber{
+public static void main (String args[])
+{
+int a=10;
+int b=20;
+System.out.println("A="+a +"B=" +b);
+int temp=a;
+a=b;
+b=temp;
+System.out.println("A="+a +"B=" +b);
+System.out.println("welcome to java World");
+}
+}
+ 
+
+Q 3 How to swap two numbers without using a third variable?
+class SwapTwoNumberWithOutUsingThirdNumber{
+public static void main (String args[])
+{
+int a=10;
+int b=20;
+a=a+b;
+b=a-b;
+a=a-b;
+
+System.out.println("a=" +a +"b=" +b);
+System.out.println("welcome to java World");
+}
+}
+
+
+ 
+Q 4 wap to check is number is evenor odd.
+
+public class even_odd {
+int code=10
+if (code % 2==0) {
+	System.out.println("even Number");
+}
+else {
+	System.out.println("odd Number");
+}
+ 
+
+Q 5 wap to print fibonaci series .
+ 
+
+Q 6 wap to check value is within range or not
+package conceptOfPrograming;
+
+public class within_range {
+	public static void main (String args[]) {
+		int value=10;
+	if(value>=10 && value<=90) {
+		System.out.println("WithIn Range");
+	}
+	else {
+		System.out.println("OutOf Range");
+	}
+	}
+	}
+
+ 
+
+Q 7 A school has following rules for grading system:
+a. Below 25 - F
+b. 25 to 45 - E
+c. 45 to 50 - D
+d. 50 to 60 - C
+e. 60 to 80 - B
+f. Above 80 - A
+Ask user to enter marks and print the corresponding grade
+
+ 
+
+Q 8 Take values of length and breadth of a rectangle from user and check if it is square or not.
+hint is length==breath square else rectangle 
+
+package conceptOfPrograming;
+
+public class within_range {
+	public static void main (String args[]) {
+		int length=10;
+                int breath=10;
+	if(length==brath) {
+		System.out.println("Its Square");
+	}
+	else {
+		System.out.println("its rectangle");
+	}
+	}
+	}
+ 
+Q 9 check and print greater number among two numbers
+ 
+class swapTwoNumber{
+public static void main (String args[])
+{
+int a=10;
+int b=20;
+if(a>b)
+System.out.println("Print Greater");
+else
+System.out.println("Print its not Greater");
+}
+}
+ 
+
+Q 10  check and print greater number among three numbers 
+class swapTwoNumber{
+public static void main (String args[])
+{
+int a=10;
+int b=20;
+int c=30;
+if(a>b){
+System.out.println("Print Greater"+a);
+}
+else if(b>c){
+System.out.println("Print Greater"+b);
+}
+else{
+System.out.println("Print Greater"+c);
+}
+}
+
+Q.11 WAP to print absolute value entered by user
+				/*
+				int x;
+				int num;
+				System.out.println("enter the value :");
+				x=sc.nextInt();
+				if(x<0)
+				{
+					num=-1*x;
+					System.out.println(num);
+				}
+				else
+				{
+					System.out.println(x);
+				}
+				*/
+
+Q.12 check alphabet is in lower case (A-Z)(65-90) 
+
+package conceptOfPrograming;
+
+import java.util.Scanner;
+
+public class absolute_value {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+    	char ch=0;
+		System.out.println("enter the character :");
+		ch=sc.next().charAt(ch);
+		if(ch>=65 && ch<=90)
+		{
+			System.out.println("upper case");
+		}
+		else if(ch>=97 && ch<=122)
+		{
+			System.out.println("lower case");
+		}
+}
+}
+				
+		
+Q.13 print the expression and see the output 
+package conceptOfPrograming;
+
+public class absolute_value {
+	public static void main(String[] args) {
+		
+	int x, y, z;
+	x = 2;
+	y = 5;
+	z = 0;
+	System.out.println(x == 2);
+	System.out.println(x != 5);
+	System.out.println(x != 5 && y >= 5);
+	System.out.println(z != 0 || x == 2);
+	System.out.println(!(y < 10));
+}
+}
+
+		
+Q.14 Check if a given number is leap year or not 
+package conceptOfPrograming;
+
+import java.util.Scanner;
+
+public class absolute_value {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		 int year;
+		System.out.println("enter the year:");
+		year=sc.nextInt();
+		boolean leap = false;
+		// if the year is divided by 4
+		if (year % 4 == 0) {
+			// if the year is century
+			if (year % 100 == 0) {
+				// if year is divided by 400
+				// then it is a leap year
+				if (year % 400 == 0)
+					leap = true;
+				else
+					leap = false;
+			}
+			// if the year is not century
+			else
+				leap = true;
+		} else
+			leap = false;
+
+		if (leap)
+			System.out.println(year + " is a leap year.");
+		else
+			System.out.println(year + " is not a leap year.");
+		
+	}
+}
+
+		
+Q 15 wap to calculate simple interest Simple Interest = (P x T x R)/100
+
+package conceptOfPrograming;
+
+import java.util.Scanner;
+
+public class absolute_value {
+	public static void main(String[] args) {
+		int p,t,r;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter the principle amount:");
+		p=sc.nextInt();
+		System.out.println("enter the time:");
+		t=sc.nextInt();
+		System.out.println("enter the rate:");
+		r=sc.nextInt();
+		
+		int numer,result;
+		numer=p*t*r;
+		result=numer/100;
+		System.out.println("Simple Interest :"+result);
+	}
+}
+
+
+Q 16 Wap to print perimeter of rectengle Perimeter of 
+
+package conceptOfPrograming;
+
+import java.util.Scanner;
+
+public class absolute_value {
+	public static void main(String[] args) {
+		int a,b,res;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter length:");
+		a=sc.nextInt();
+		System.out.println("enter breadth:");
+		b=sc.nextInt();
+		res=2*(a+b);
+		System.out.println("perimeter of rectangle ABCD:"+res);
+	}
+}
+		
+
+Q 17 Java Program to Check Whether the Character is Vowel or Consonant
+package conceptOfPrograming;
+
+import java.util.Scanner;
+
+public class absolute_value {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		char ch;
+		System.out.println("Enter the character:");
+		ch=sc.next().charAt(0);
+		if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u')
+			System.out.println("it is vowel");
+		else if(ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U')
+			System.out.println("it is vowel");
+		else
+			System.out.println("it is constant");
+		sc.close();
+}
+}
+
+bhushankusale555@gmail.com
+
