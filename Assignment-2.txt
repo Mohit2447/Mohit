@@ -1,0 +1,337 @@
+Loop Questions 
+
+Q1 Write a program to calculate the sum of first 10 natural number.
+package conceptOfPrograming;
+
+public class Natural_Numbers {
+	public static void main(String[] args) {
+	int s=0;
+
+    for(int i = 1;i <= 3; i++){
+    	s=i+s;
+    }
+
+    System.out.println("Sum of 10 natural numbers:"+s);
+}
+}
+
+
+Q 2 Write a program that prompts the user to input a positive integer. It should then print the multiplication table of that number. 
+package conceptOfPrograming;
+import java.util.*;
+public class Table {
+	public static void main (String args[]) {
+		Scanner Table=new Scanner (System.in);
+		System.out.println("Enter Table");
+		int table=Table.nextInt();
+		System.out.println("Table"+table);
+		for (int i=1; i<=10;i++) {
+			System.out.println(table*i);
+		}
+		Table.close();
+		
+		
+	}
+}
+
+Q 3 Write a program that prompts the user to input an integer and then outputs the number with the digits reversed. For example, if the input is 12345, the output should be 54321.
+package conceptOfPrograming;
+import java.util.*;
+public class reverse {
+	public static void main (String args[]) {
+	int x;
+	Scanner s= new Scanner(System.in);
+    System.out.println("enter number");
+	
+    x=s.nextInt();//12345544466  -->54321
+	int rem;
+	
+	while(x!=0)
+	{
+	rem=x%10;
+	System.out.print(rem);
+	x=x/10;
+	}
+	s.close();
+}
+}
+
+
+Q 4 Write a do-while loop that asks the user to enter two numbers. The numbers should be added and the sum displayed. The loop should ask the user whether he or she wishes to perform the operation again. If so, the loop should repeat; otherwise it should terminate.(while loop)
+package conceptOfPrograming;
+import java.util.*;
+public class dowhileSum {
+	public static void main(String[] args)
+    {
+        Scanner console = new Scanner(System.in);
+     
+        int number1, number2;
+        char choice;
+        
+        do
+        {
+            System.out.print("Enter the first number ");
+            number1 = console.nextInt();
+          
+            System.out.print("Enter the second number ");
+            number2 = console.nextInt();
+            
+            int sum = number1 + number2;
+            System.out.println("Sum of numbers: " + sum);
+        
+            System.out.print("Do you want to continue y/n? ");
+            choice = console.next().charAt(0);
+            
+            System.out.println();
+            
+        }while(choice=='y' || choice == 'Y');
+        console.close();
+    }  
+}
+
+
+Q 5 Write a program to print out all Armstrong numbers between 1 and 500. If sum of cubes of each digit of the number is equal to the number itself, then the number is called an Armstrong number.
+For example, 153 = ( 1 * 1 * 1 ) + ( 5 * 5 * 5 ) + ( 3 * 3 * 3 )
+
+package conceptOfPrograming;
+import java.util.*;
+public class armstrong {
+	public static void main(String[] args) {
+		int x;
+		Scanner s= new Scanner(System.in);
+        System.out.println("enter number");
+		 x=s.nextInt();
+	     int y;
+		 y=x;
+	     int rem;
+		int sum=0;
+		while(x!=0)
+		{
+		rem=x%10;
+		sum+= Math.pow(rem, 3);
+		System.out.print(rem);
+		x=x/10;
+		}
+		if(y==sum)
+			System.out.println("number is armstrong");
+		else
+			System.out.println("number not armstrong");
+	}
+}
+
+
+Q 6 Write a program to print Fibonacci series of n terms where n is input by user :
+0 1 1 2 3 5 8 13 24 ..... 
+package conceptOfPrograming;
+
+import java.util.Scanner;
+
+public class fibonaci_series {
+	public static void main(String[] args) {
+		System.out.println("Taking Input From the User");
+		Scanner Numbers = new Scanner(System.in);
+		int a = Numbers.nextInt();
+		int n1 = 0, n2 = 1, nextTerm;
+		for (int i = 1; i <=a; i++) {
+			System.out.println(+n1);
+		    nextTerm = n1 + n2;
+		    n1 = n2;
+		    n2 = nextTerm;
+		}
+}
+}
+
+
+Q 7 Write a program to print following :
+
+ 
+
+i)
+
+**********
+**********
+**********
+**********
+package conceptOfPrograming;
+
+public class pattern {
+	public static void main(String[] args) {
+		for (int i = 1; i <= 6; i++) {
+			for (int j = 1; j <= 6; j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+	}
+}
+}
+
+ii)
+
+*
+**
+***
+****
+*****
+
+package conceptOfPrograming;
+
+public class pattern {
+	public static void main(String[] args) {
+		int rows = 5;
+
+		for (int i = 1; i <= rows; ++i) {  
+
+		for (int j = 1; j <= i; ++j) { 
+		System.out.print("* "); 
+
+		}
+
+		System.out.println();
+
+		}
+
+		}
+
+		}
+
+iii)
+
+      *
+      **
+      ***
+      ****
+      *****
+package conceptOfPrograming;
+
+public class pattern {
+	public static void main(String[] args) {
+		int rows = 5;
+
+		for (int i = 1; i <= rows; ++i) {  
+
+		for (int j = 1; j <= i; ++j) { 
+		System.out.print("* "); 
+
+		}
+
+		System.out.println();
+
+		}
+
+		}
+
+		}
+ 
+
+iv)
+
+        *
+      ***
+    *****
+  *******
+*********
+
+package conceptOfPrograming;
+
+public class pattern {
+	public static void main(String[] args) {
+		for (int i = 1; i <= 10; i++) {
+			
+			for (int j = i; j <= 10; j++) {
+				System.out.print("  ");
+			}
+			for(int k=1;k<=i;k++) {
+				System.out.print("* ");
+			}
+			
+			System.out.println();
+	}
+}
+}
+
+
+v)
+
+        1
+      222
+    33333
+  4444444
+555555555
+
+package conceptOfPrograming;
+
+public class pattern {
+	public static void main(String[] args) {
+		for (int i = 1; i <= 6; i++) {
+			
+			for (int j = i; j <= 6; j++) {
+				System.out.print("  ");
+			}
+			for(int k=1;k<=i;k++) {
+				System.out.print(i+ " ");
+			}
+			
+			System.out.println();
+	}
+}
+}
+
+
+Vi)
+1 
+2 2 
+3 3 3 
+4 4 4 4 
+5 5 5 5 5 
+6 6 6 6 6 6
+
+package conceptOfPrograming;
+
+public class pattern {
+	public static void main(String[] args) {
+for (int i = 1; i <= 6; i++) 
+{
+for (int j = 1; j <= i; j++)
+{
+System.out.print(i+" ");
+}
+             
+System.out.println();
+}
+}
+}
+
+Q 8 Print ASCII values and their equivalent characters. ASCII value vary from 0 to 255.
+
+package conceptOfPrograming;
+
+public class ASCII_value {
+	public static void main(String[] args) {
+		for(int i = 0; i <=255;i++) {
+
+			System.out.println((char)i + " = "+i);
+	}
+}
+}
+
+
+Q 9 Write a program in java to find the sum of the even and odd digits of the number which is given as input.
+
+package conceptOfPrograming;
+import java.util.Scanner;
+public class odd_even_Addition {
+		public static void main(String[] args) {
+	        System.out.println("Taking Input From the User");
+	        Scanner sc = new Scanner(System.in);
+	        System.out.println("Enter even number");
+	        int a = sc.nextInt(); 
+	        System.out.println("Enter odd number");
+	        int b = sc.nextInt();
+	        int sum = a +b;
+	    
+	        System.out.println("The sum of these numbers is");
+	        System.out.println(sum);
+}
+	}
+
+
